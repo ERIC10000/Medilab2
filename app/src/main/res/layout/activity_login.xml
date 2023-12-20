@@ -77,9 +77,10 @@
                 android:textStyle="bold"/>
 
             <EditText
+                android:id="@+id/edLoginSurname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text   "/>
+                android:inputType="text"/>
 
             <View
                 android:layout_width="wrap_content"
@@ -92,6 +93,7 @@
                 android:textStyle="bold"/>
 
             <EditText
+                android:id="@+id/edPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"/>
@@ -118,6 +120,7 @@
             </RelativeLayout>
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/loginBtn"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:text="Login"

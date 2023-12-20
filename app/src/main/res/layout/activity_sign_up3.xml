@@ -72,13 +72,27 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Patient Surname"
+                android:text="Patient DOB"
                 android:textStyle="bold"/>
 
+           <com.google.android.material.button.MaterialButton
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="200dp"
+               android:text="Date of Birth"
+               android:id="@+id/btnDatePicker"
+               app:cornerRadius="10dp"
+               android:textAllCaps="false"/>
+
             <EditText
+                android:id="@+id/edDate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text"/>
+                android:layout_marginRight="200dp"
+                android:hint="Date Here"
+                android:enabled="false"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue"/>
 
 
             <View
@@ -88,32 +102,39 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Other Names"
+                android:text="Patients Gender"
                 android:textStyle="bold"/>
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="text"/>
+           <RadioGroup
+               android:layout_width="match_parent"
+               android:orientation="horizontal"
+               android:layout_height="wrap_content">
+
+               <RadioButton
+                   android:id="@+id/male"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Male"/>
+
+               <RadioButton
+                   android:id="@+id/female"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Female"/>
+
+               <RadioButton
+                   android:id="@+id/other"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Other"/>
+
+           </RadioGroup>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="30dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Patient Email"
-                android:textStyle="bold"/>
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"/>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="20dp"/>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/finish"

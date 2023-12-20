@@ -15,12 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-//        val webView: WebView = findViewById(R.id.webView)
-//        webView.settings.javaScriptEnabled = true
-//        webView.webViewClient = WebViewClient()
-//
-//// Load the HTML file from assets folder
-//        webView.loadUrl("file:///android_asset/onboading2.html")
+        val home_button: Button = findViewById(R.id.home)
 
         val signin_button: Button = findViewById(R.id.signin_button)
         signin_button.setOnClickListener {

@@ -76,6 +76,7 @@
                 android:textStyle="bold"/>
 
             <EditText
+                android:id="@+id/edSurname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"/>
@@ -92,6 +93,7 @@
                 android:textStyle="bold"/>
 
             <EditText
+                android:id="@+id/edOthers"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"/>
@@ -107,6 +109,7 @@
                 android:textStyle="bold"/>
 
             <EditText
+                android:id="@+id/edEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"/>

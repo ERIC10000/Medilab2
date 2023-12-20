@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg5"
-    tools:context=".SignUpActivity2">
+    tools:context=".LoginActivity2">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -55,7 +55,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Register Here"
+                android:text="Login Here"
                 android:textColor="@color/blue"
                 android:textSize="32sp"
                 android:textStyle="bold"/>
@@ -63,7 +63,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Please Proceed With Your Registration... "/>
+                android:text="Please Login Your Credentials "/>
 
             <View
                 android:layout_width="match_parent"
@@ -72,14 +72,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Patient Phone"
+                android:text="Patient Surname"
                 android:textStyle="bold"/>
 
             <EditText
-                android:id="@+id/edPhone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"/>
+                android:inputType="text"/>
 
 
             <View
@@ -89,11 +88,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Patient Password"
+                android:text="Patients Password"
                 android:textStyle="bold"/>
 
             <EditText
-                android:id="@+id/edPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"/>
@@ -102,24 +100,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="30dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Confirm Password"
-                android:textStyle="bold"/>
-
-            <EditText
-                android:id="@+id/edConfirm"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"/>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="20dp"/>
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/next2"
+                android:id="@+id/next1"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:text="Next"
