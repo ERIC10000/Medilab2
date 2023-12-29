@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:background="@drawable/s1"
     tools:context=".MainActivity">
 
     <TextView
@@ -16,7 +16,13 @@
         android:layout_gravity="center"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:layout_marginBottom="250dp"/>
+        android:layout_marginBottom="100dp"/>
+
+
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:src="@drawable/s1"/>-->
 
 <!--    <WebView-->
 <!--        android:layout_width="match_parent"-->
@@ -41,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:text="Welcome"
                 android:textAlignment="center"
-                android:textSize="30sp"
+                android:textSize="25sp"
                 android:textColor="@color/black"
                 android:layout_marginTop="6dp"/>
 
@@ -57,9 +63,10 @@
             <Button
                 android:id="@+id/signin_button"
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
+                android:layout_height="50dp"
                 android:background="@drawable/button_bottom_sheet"
                 android:text="Sign in"
+                android:textAllCaps="false"
                 android:textSize="18sp"
                 android:layout_marginTop="25dp"
                 android:layout_marginLeft="70dp"
@@ -68,9 +75,10 @@
             <Button
                 android:id="@+id/signup"
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
+                android:layout_height="50dp"
                 android:background="@drawable/button_bottom_sheet"
                 android:text="Sign Up"
+                android:textAllCaps="false"
                 android:textSize="18sp"
                 android:layout_marginTop="15dp"
                 android:layout_marginLeft="70dp"
@@ -79,7 +87,8 @@
             <Button
                 android:id="@+id/home"
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
+                android:layout_height="50dp"
+                android:textAllCaps="false"
                 android:background="@drawable/button_bottom_sheet"
                 android:text="Check Labs"
                 android:textSize="18sp"

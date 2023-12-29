@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/hospital_icon"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/labimage"/>
+
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/linear"
+         android:layout_toEndOf="@id/labimage"
+         android:layout_margin="10dp"
+         android:orientation="vertical">
+
+         <com.google.android.material.textview.MaterialTextView
+
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Lancet Pathologists"
+             android:textStyle="bold"
+             android:textColor="#000000"
+             android:id="@+id/lab_name"/>
+
+         <com.google.android.material.textview.MaterialTextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Permit ID"
+             android:textStyle="bold"
+             android:textColor="@color/blue"
+             android:layout_marginTop="10dp"
+             android:textSize="12sp"
+             android:id="@+id/permit_id"/>
+
+     </LinearLayout>
+
+
+</RelativeLayout>

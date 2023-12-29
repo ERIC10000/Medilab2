@@ -5,19 +5,39 @@
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
 
-    <LinearLayout
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:background="@color/blue">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColorHint="@color/white"
+            android:inputType="text"
+            android:padding="8dp"
+            android:hint="Search Laboratory"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/baseline_search_24"
+            android:drawablePadding="8dp"
+            android:background="@drawable/search_background"
+            android:layout_marginTop="10dp"/>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginStart="15dp"
+            android:layout_below="@id/search"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Home Fragment"
-            android:textSize="30sp"
-            android:textColor="@color/white"/>
+            tools:listitem="@layout/single_lab"/>
 
-    </LinearLayout>
+
+    </RelativeLayout>
+
 </FrameLayout>

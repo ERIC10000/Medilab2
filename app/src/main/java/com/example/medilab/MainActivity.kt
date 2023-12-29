@@ -16,6 +16,10 @@ class MainActivity : AppCompatActivity() {
 
 
         val home_button: Button = findViewById(R.id.home)
+        home_button.setOnClickListener {
+            val intent = Intent(applicationContext, HomeActivity::class.java)
+            startActivity(intent)
+        }
 
         val signin_button: Button = findViewById(R.id.signin_button)
         signin_button.setOnClickListener {
