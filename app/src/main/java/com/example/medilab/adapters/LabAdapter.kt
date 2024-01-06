@@ -1,11 +1,14 @@
 package com.example.medilab.adapters
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.medilab.LabTestsActivity
 import com.example.medilab.R
+import com.example.medilab.helpers.PrefsHelper
 import com.example.medilab.models.Lab
 import com.google.android.material.textview.MaterialTextView
 
@@ -40,7 +43,17 @@ class LabAdapter(var context: Context) :
         val labModel = itemList[position]
 
         tvLabName.text = labModel.lab_name
-        tvLabPermit.text = labModel.permit_id
+        tvLabPermit.text = "Permit Serial: " +  labModel.permit_id
+
+
+        holder.itemView.setOnClickListener {
+            val lab_id = labModel.lab_id
+            PrefsHelper.savePrefs(context, "lab_id", lab_id.toString() )
+            val intent = Intent(context, LabTestsActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            context.startActivity(intent)
+
+        }
 
     }
 
